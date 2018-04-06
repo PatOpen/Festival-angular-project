@@ -1,0 +1,11 @@
+<div class="col text-center">
+  <h2>Dernières nouvelles...</h2>
+</div>
+<div class="card-deck">
+  <div class="card" *ngFor="let actu of actus">
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ actu.title }}</h5>
+      <p class="card-text"><ins>Decription</ins>: {{ actu.content }}</p>
+    </div>
+  </div>
+</div>

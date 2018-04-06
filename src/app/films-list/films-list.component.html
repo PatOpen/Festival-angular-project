@@ -1,0 +1,14 @@
+
+<div class="card-deck">
+  <div class="card" *ngFor="let list of listFilms">
+    <div class="card-body">
+      <h5 class="card-title text-center">{{ list.titre }}</h5>
+      <p class="card-text"><ins>Réalisateur</ins>: {{ list.real }}</p>
+      <p class="card-text"><ins>Decription</ins>: {{ list.desc }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Le {{ list.date }} août</small>
+      <small class="text-muted">Projection à {{ list.heure }}</small>
+    </div>
+  </div>
+</div>

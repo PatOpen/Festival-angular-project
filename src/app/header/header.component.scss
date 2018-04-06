@@ -1,0 +1,17 @@
+@import "../../sass/tools";
+
+@include media-breakpoint-up(xs) {
+  .nav-link{
+    padding-right: 0.5em;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .nav-link{
+    padding-right: 0.5em;
+  }
+}
+@include media-breakpoint-up(md) {
+  .nav-link{
+    padding-right: 0.5em;
+  }
+}
