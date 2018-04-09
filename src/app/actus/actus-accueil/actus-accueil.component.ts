@@ -2,11 +2,13 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActusService} from '../../services/actus.service';
 import {Subscription} from 'rxjs/Subscription';
 import {Actus} from '../../models/actus.model';
+
 @Component({
   selector: 'app-actus-accueil',
   templateUrl: './actus-accueil.component.html',
   styleUrls: ['./actus-accueil.component.scss']
 })
+
 export class ActusAccueilComponent implements OnInit, OnDestroy {
 
     actus: Actus[];

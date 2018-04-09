@@ -16,7 +16,7 @@
           <a class="nav-link" routerLink="auth/Enregistrement">Créer un compte</a>
         </li>
          <li class="nav-item" routerLinkActive="active" *ngIf="isAuth">
-           <a class="nav-link" (click)="onSignOut()" style="cursor: pointer">Déconnexion</a>
+           <a class="nav-link" (click)="onSignOut()">Déconnexion</a>
          </li>
         <li class="nav-item" routerLinkActive="active" *ngIf="!isAuth">
           <a class="nav-link" routerLink="auth/Connexion">Connexion</a>

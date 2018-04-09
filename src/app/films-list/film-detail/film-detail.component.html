@@ -1,3 +1,16 @@
-<p>
-  film-detail works!
-</p>
+<div class="col-sm-6 col-md-4">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title text-center">{{ titre }}</h5>
+    </div>
+    <img class="card-img-top" src="../../assets/images/{{ src }}" alt="{{ titre }}">
+    <div class="card-body">
+      <p class="card-text"><ins>Réalisateur</ins>: {{ real }}</p>
+      <p class="card-text"><ins>Synopsis</ins>: {{ desc }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Le {{ date }} août,</small>
+      <small class="text-muted">projection à {{ heure }}</small>
+    </div>
+  </div>
+</div>

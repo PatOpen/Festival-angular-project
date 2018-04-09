@@ -1,14 +1,20 @@
 
 <div class="card-deck">
-  <div class="card" *ngFor="let list of listFilms">
-    <div class="card-body">
+  <div class="col-sm-6 col-md-4" *ngFor="let list of listFilms; let i = index">
+  <div class="card">
+    <div class="card-header">
       <h5 class="card-title text-center">{{ list.titre }}</h5>
-      <p class="card-text"><ins>Réalisateur</ins>: {{ list.real }}</p>
-      <p class="card-text"><ins>Decription</ins>: {{ list.desc }}</p>
+    </div>
+    <img class="card-img-top" src="../../assets/images/{{ list.src }}" alt="{{ list.titre }}">
+    <div class="card-body">
+      <p class="card-text"><ins>Réalisateur</ins>: {{ list.real | slice:0:10 }} ...</p>
+      <p class="card-text"><ins>Synopsis</ins>: {{ list.desc | slice:0:30 }} ...</p>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Le {{ list.date }} août</small>
-      <small class="text-muted">Projection à {{ list.heure }}</small>
+      <small class="text-muted">Le {{ list.date }} août,</small>
+      <small class="text-muted">projection à {{ list.heure }}</small>
+      <button class="btn btn-success" (click)="onFilmDetail(i)">Voir détails</button>
     </div>
+  </div>
   </div>
 </div>

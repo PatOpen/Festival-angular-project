@@ -1,5 +1,5 @@
-export  class film {
+export  class Films {
 
-    constructor(public title: string, public real: string, public content:string, public photo: string){}
+    constructor(public id: number, public titre: string, public src: string, public real: string, public date: number, public heure: string, public desc:string){}
 
 }

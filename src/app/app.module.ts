@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { ActusAccueilComponent } from './actus/actus-accueil/actus-accueil.component';
 import { InscriptionComponent } from './insciption/inscription.component';
 import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmDetailComponent } from './films-list/film-detail/film-detail.component';
@@ -15,10 +16,11 @@ import { SigninComponent } from './auth/signin/signin.component';
 import {AuthService} from './services/auth.service';
 import {AuthGuardService} from './services/auth-guard.service';
 import {ActusService} from './services/actus.service';
+import {ListeFilmsService} from './services/liste-films.service';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
-import { ActusAccueilComponent } from './actus/actus-accueil/actus-accueil.component';
+
 
 const appRoutes: Routes = [
     { path: 'auth/Enregistrement', canActivate: [AuthGuardService], component: SignupComponent },
@@ -57,7 +59,8 @@ const appRoutes: Routes = [
   providers: [
       AuthService,
       AuthGuardService,
-      ActusService
+      ActusService,
+      ListeFilmsService
   ],
   bootstrap: [AppComponent]
 })

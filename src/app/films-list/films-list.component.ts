@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ListeFilmsService} from '../services/liste-films.service';
+import {Router} from '@angular/router';
+import {Subscription} from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-films-list',
@@ -7,33 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsListComponent implements OnInit {
 
-  listFilms = [
-      {
-        titre: 'test',
-        real: 'machin',
-        date: '6',
-        heure: '22h',
-        desc: 'Ce film machin est super génial'
-      },
-      {
-          titre: 'test',
-          real: 'machin',
-          date: '7',
-          heure: '20h',
-          desc: 'Ce film machin est super génial'
-      },
-      {
-          titre: 'test',
-          real: 'machin',
-          date: '8',
-          heure: '18h',
-          desc: 'Ce film machin est super génial'
-      }
-  ];
+  listFilms: any[];
+  filmSubscription: Subscription;
 
-  constructor() { }
+  constructor(private listeFilmsService: ListeFilmsService,
+              private router: Router) { }
 
   ngOnInit() {
+      this.filmSubscription = this.listeFilmsService.filmSubject.subscribe(
+          (listFilms: any[]) => {
+              this.listFilms = listFilms;
+          }
+      );
+      this.listeFilmsService.emitFilmSubject();
+  }
+
+  onFilmDetail(id: number) {
+      this.router.navigate(['/Films', 'Detail', id]);
   }
 
 }
