@@ -16,7 +16,14 @@ export class ActusService {
   }
 
   saveActus(){
-      firebase.database().ref('/actus').set(this.actus);
+      return new  Promise(
+          (resolve, reject) => {
+              firebase.database().ref('/actus').set(this.actus).then(
+                  () => resolve(),
+                  error => reject(error)
+              );
+          }
+       );
   }
 
   getActus() {

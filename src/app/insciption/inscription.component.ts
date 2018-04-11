@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Subscription} from 'rxjs/Subscription';
+import {Inscription} from '../models/inscription.model';
+import {InscriptionService} from '../services/inscription.service';
 
 @Component({
   selector: 'app-inscription',
   templateUrl: './inscription.component.html',
   styleUrls: ['./inscription.component.scss']
 })
-export class InscriptionComponent implements OnInit {
+export class InscriptionComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+    inscription: Inscription[];
+    inscriptionSubscription: Subscription;
 
-  ngOnInit() {
-  }
+    constructor(private inscriptionService: InscriptionService) { }
 
+    ngOnInit() {
+        this.inscriptionSubscription = this.inscriptionService.inscriptionSubject.subscribe(
+            (inscription: Inscription[]) => {
+                this.inscription = inscription;
+            }
+        );
+        this.inscriptionService.getInscription();
+        this.inscriptionService.emitInscription();
+    }
+
+
+    ngOnDestroy() {
+        this.inscriptionSubscription.unsubscribe();
+    }
 }

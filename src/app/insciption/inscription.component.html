@@ -1,3 +1,9 @@
-<p>
-  administration works!
-</p>
+<div class="col text-center">
+  <h2>Pré-inscription en ligne</h2>
+</div>
+<div class="row">
+  <div class="col-md-4 col-sm-6" *ngFor="let reservation of inscription">
+      <h4>{{ reservation.titre }}</h4>
+      <p><ins>Nombre d'inscriptions</ins>: {{ reservation.reservation }}</p>
+  </div>
+</div>

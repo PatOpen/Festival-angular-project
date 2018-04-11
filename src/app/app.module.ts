@@ -20,6 +20,7 @@ import {ListeFilmsService} from './services/liste-films.service';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
+import {InscriptionService} from './services/inscription.service';
 
 
 const appRoutes: Routes = [
@@ -60,7 +61,8 @@ const appRoutes: Routes = [
       AuthService,
       AuthGuardService,
       ActusService,
-      ListeFilmsService
+      ListeFilmsService,
+      InscriptionService
   ],
   bootstrap: [AppComponent]
 })

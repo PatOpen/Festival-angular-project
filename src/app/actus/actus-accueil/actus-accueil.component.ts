@@ -19,7 +19,7 @@ export class ActusAccueilComponent implements OnInit, OnDestroy {
     ngOnInit() {
         this.actusSubscription = this.actusService.actusSubject.subscribe(
             (actus: Actus[]) => {
-                this.actus =actus;
+                this.actus = actus;
             }
         );
         this.actusService.getActus();

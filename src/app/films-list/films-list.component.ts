@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ListeFilmsService} from '../services/liste-films.service';
 import {Router} from '@angular/router';
 import {Subscription} from 'rxjs/Subscription';
@@ -8,7 +8,7 @@ import {Subscription} from 'rxjs/Subscription';
   templateUrl: './films-list.component.html',
   styleUrls: ['./films-list.component.scss']
 })
-export class FilmsListComponent implements OnInit {
+export class FilmsListComponent implements OnInit, OnDestroy {
 
   listFilms: any[];
   filmSubscription: Subscription;
@@ -28,5 +28,9 @@ export class FilmsListComponent implements OnInit {
   onFilmDetail(id: number) {
       this.router.navigate(['/Films', 'Detail', id]);
   }
+
+    ngOnDestroy() {
+        this.filmSubscription.unsubscribe();
+    }
 
 }
