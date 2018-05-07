@@ -1,9 +1,11 @@
-<div class="col text-center">
-  <h2>Pré-inscription en ligne</h2>
-</div>
-<div class="row">
-  <div class="col-md-4 col-sm-6" *ngFor="let reservation of inscription">
-      <h4>{{ reservation.titre }}</h4>
-      <p><ins>Nombre d'inscriptions</ins>: {{ reservation.reservation }}</p>
-  </div>
-</div>
+<section class="section-inscription">
+    <div class="titre-inscription centrer">
+        <h1>Pré-inscription en ligne</h1>
+    </div>
+    <div class="items-inscription centrer">
+        <div class="block-items-inscription" *ngFor="let reservation of inscription">
+            <h3>{{ reservation.titre }}</h3>
+            <p>Nombre d'inscriptions -><span><strong>{{ reservation.reservation }}</strong></span></p>
+        </div>
+    </div>
+</section>

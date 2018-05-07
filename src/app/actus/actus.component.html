@@ -1,13 +1,15 @@
-<div class="row">
-  <div class="col">
-    <h2>Les Actualitées</h2>
-    <div class="list-group">
-      <div class="list-group-item-dark" *ngFor="let actu of actus">
-        <h3 class="list-group-item">{{ actu.title }}</h3>
-        <p class="list-group-item">{{ actu.content }}</p>
-        <button class="btn btn-danger" (click)="onDeleteActus(actu)">Supprimer</button>
-      </div>
-    </div>
-    <button class="btn btn-primary" (click)="onNewActus()">Nouvelle actualité</button>
+
+<section class="section-actus">
+  <div class="titre-actus centrer">
+    <h1>Liste des actualitées</h1>
   </div>
-</div>
+  <div class="liste-actus">
+    <div class="items-actus" *ngFor="let actu of actus">
+      <h2 class="centrer">{{ actu.title }}</h2>
+      <p>{{ actu.content }}</p>
+      <button class="" (click)="onDeleteActus(actu)"><strong>Supprimer</strong></button>
+    </div>
+  </div>
+  <button class="button-nouvelle-actus" (click)="onNewActus()"><strong>Nouvelle actualité</strong></button>
+</section>
+

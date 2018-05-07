@@ -1,0 +1,41 @@
+@import "../../../sass/variables";
+
+.accueil-actus {
+  color: $texte-couleur-actus;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  .items-actus {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: $ombre-item-actus;
+    border: $bordure-actus;
+    width: 20%;
+    h3 {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 700px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 300px;
+    }
+  }
+}
+
+
+
+.actus-h2 {
+  background: $bg-couleur-actus-h2;
+  margin-top: -50px;
+  height: 50px;
+  margin-bottom: 20px;
+  color: $titre-h2-actus-couleur;
+}

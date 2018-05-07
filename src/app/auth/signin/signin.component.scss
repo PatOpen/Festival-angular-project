@@ -1,0 +1,48 @@
+@import "../../../sass/variables";
+
+.section-connexion {
+  background: url("../../../assets/images/parc-monceau_1600x667-nb.jpg") no-repeat center;
+  background-size: cover ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .titre-connexion {
+    background-color: $bg-couleur-titre-connexion;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: $ombre-titre-connexion;
+  }
+  .form-connexion {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: $bg-couleur-form-connexion;
+    margin-top: 200px;
+    padding: 45px;
+    border-radius: 10px;
+    border: $bordure-form-connexion;
+    @media screen and (max-width: 576px ){
+      margin-top: 100px;
+    }
+    .form-connexion-input {
+      padding-bottom: 10px;
+    }
+    button {
+      background-color: $bg-couleur-button-connexion;
+      color: $texte-couleur-button-connexion;
+      border: $bordure-button-connexion;
+      margin-top: 10px;
+      padding: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background-color: $bg-couleur-button-survol-connexion;
+      border: $bordure-button-survol-connexion;
+      box-shadow: $ombre-button-survol-connexion;
+      letter-spacing: 3px;
+    }
+  }
+
+}

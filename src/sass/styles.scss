@@ -1,7 +1,15 @@
 @charset "UTF-8";
 @import "variables";
 @import "~bourbon/core/bourbon";
-@import "bootstrap-custom";
+
+// STYLES Global
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// Balises
 
 body {
   background-color: $bg-color;
@@ -9,3 +17,20 @@ body {
   color: $texte-couleur;
 }
 
+a {
+  text-decoration: none;
+}
+
+input {
+  font-size: 1.1rem;
+  width: 250px;
+  padding: 4px;
+  border: $bordure-input;
+  border-radius: 3px;
+}
+
+// Styles de classes
+
+.centrer {
+  text-align: center;
+}

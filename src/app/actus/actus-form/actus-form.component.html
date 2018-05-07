@@ -1,16 +1,15 @@
-<div class="container">
-  <div class="justify-content-center text-center">
-    <h2>Enregistrer une nouvelle actualité</h2>
-    <form [formGroup]="actusForm" (ngSubmit)="onSaveNewActus()">
-      <div class="form-group">
-        <label for="title">Titre</label>
-        <input type="text" class="form-control" id="title" formControlName="title">
-      </div>
-      <div class="form-group">
-        <label for="content">Contenu de l'actualité</label>
-        <textarea type="text" class="form-control" id="content" formControlName="content"></textarea>
-      </div>
-      <button class="btn btn-success" [disabled]="actusForm.invalid" type="submit">Enregistrer</button>
-    </form>
+
+<section class="section-form-actus">
+  <div class="titre-form-actus centrer">
+    <h1>Enregistrer une nouvelle actualité</h1>
   </div>
-</div>
+  <form class="form-actus"  [formGroup]="actusForm" (ngSubmit)="onSaveNewActus()">
+    <div class="form-actus-input">
+      <input type="text" id="title" formControlName="title" placeholder="Titre de l'actualitée">
+    </div>
+    <div>
+      <textarea type="text" id="content" formControlName="content" placeholder="Contenu de l'actualité"></textarea>
+    </div>
+    <button [disabled]="actusForm.invalid" type="submit"><strong>Enregistrer</strong></button>
+  </form>
+</section>

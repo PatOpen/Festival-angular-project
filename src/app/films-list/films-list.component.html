@@ -1,20 +1,26 @@
-
-<div class="card-deck">
-  <div class="col-sm-6 col-md-4" *ngFor="let list of listFilms; let i = index">
-  <div class="card">
-    <div class="card-header">
-      <h5 class="card-title text-center">{{ list.titre }}</h5>
-    </div>
-    <img class="card-img-top" src="../../assets/images/{{ list.src }}" alt="{{ list.titre }}">
-    <div class="card-body">
-      <p class="card-text"><ins>Réalisateur</ins>: {{ list.real | slice:0:10 }} ...</p>
-      <p class="card-text"><ins>Synopsis</ins>: {{ list.desc | slice:0:30 }} ...</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Le {{ list.date }} août,</small>
-      <small class="text-muted">projection à {{ list.heure }}</small>
-      <button class="btn btn-success" (click)="onFilmDetail(i)">Voir détails</button>
-    </div>
-  </div>
-  </div>
+<div class="titre-films-liste centrer">
+  <h1>Listes des films</h1>
 </div>
+
+<section class="section-films-liste">
+  <div class="block-item-films-liste" *ngFor="let list of listFilms; let i = index">
+      <div class="titre-film-liste centrer">
+        <h4 class="">{{ list.titre }}</h4>
+      </div>
+      <div class="img-films-liste">
+        <img src="../../assets/images/{{ list.src }}" alt="{{ list.titre }}">
+        <div class="block-description-film-liste">
+          <div>
+            <p><strong><ins>Réalisateur</ins></strong>: {{ list.real | slice:0:8}} ...</p>
+            <p><strong><ins>Synopsis</ins></strong>: {{ list.desc | slice:0:120 }} ...</p>
+          </div>
+          <div class="centrer">
+            <span>Le {{ list.date }} août, projection à {{ list.heure }}</span>
+            <button (click)="onFilmDetail(i)">Voir détails</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

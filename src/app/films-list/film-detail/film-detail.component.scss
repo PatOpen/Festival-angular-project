@@ -1,0 +1,105 @@
+@import "../../../sass/variables";
+
+.section-film-detail {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  .titre-film-detail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: $bg-couleur-titre-films-detail;
+    box-shadow: $ombre-titre-films-detail;
+  }
+
+  .article-film-detail{
+    display: flex;
+    background-color: $bg-couleur-article-film-detail;
+    box-shadow: $ombre-article-film-detail;
+    margin: 10px;
+    padding: 10px;
+    img {
+      border:$bordure-img-article-film-detail;
+    }
+    .description-film-detail {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      flex-direction: column;
+      p:first-child {
+        margin-bottom: 20px;
+      }
+      p {
+        padding: 0 0 0 20px;
+      }
+
+      @media screen and (max-width: 690px){
+        p {
+          padding: 20px 0 0 0;
+        }
+      };
+    }
+    @media screen and (max-width: 690px){
+      flex-flow: row wrap;
+      justify-content: center;
+      text-align: justify;
+    };
+  }
+
+  .date-projection-film-detail {
+    background-color: $bg-couleur-date-projection-film-detail;
+    box-shadow: $ombre-date-projection-film-detail;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .article-inscription-film-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-couleur-article-inscription-film-detail;
+    box-shadow: $ombre-article-inscription-film-detail;
+    padding: 10px;
+    margin: 10px;
+    @media screen and (max-width: 590px){
+      text-align: justify;
+    }
+    h2 {
+      padding: 10px;
+    }
+    p {
+      padding: 10px;
+    }
+    .button-ajouter-film-detail {
+      background-color: $bg-couleur-button-ajouter-film-detail;
+      border: $bordure-button-ajouter-film-detail;
+      color: $texte-couleur-button-ajouter-film-detail;
+      font-size: 1.5rem;
+      padding: 5px 15px 5px 15px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    span {
+      font-size: 2rem;
+    }
+    .button-inscrire-film-detail {
+      background-color: $bg-couleur-button-inscrire-film-detail;
+      border: $bordure-button-inscrire-film-detail;
+      color: $texte-couleur-button-inscrire-film-detail;
+      font-size: 1.5rem;
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .button-ajouter-film-detail:hover, .button-inscrire-film-detail:hover{
+      background-color: $bg-couleur-survol-button-film-detail;
+      box-shadow: $ombre-survol-button-film-detail;
+    }
+  }
+}

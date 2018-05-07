@@ -1,0 +1,72 @@
+@import "../../sass/variables";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-couleur-footer;
+  color: $texte-couleur-footer;
+  margin-top: 20px;
+  padding: 20px 0 20px 0;
+  .titre-footer {
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+  }
+  .section-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    .carte-footer {
+      iframe {
+        width: 600px;
+        margin:0 10px 0 0;
+        height: 300px;
+        border:$bordure-map-footer;
+        @media screen and (max-width: 1062px) {
+          margin: 0 0 20px 0;
+        }
+        @media screen and (max-width: 700px) {
+          width: 438px;
+        }
+        @media screen and (max-width: 500px) {
+          width: 338px;
+        }
+      }
+    }
+    .contact-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 1.2rem;
+      padding: 20px;
+      height: 260px;
+      background-color: $bg-couleur-contact-footer;
+      border: $bordure-contact-footer;
+      @media screen and (max-width: 1062px) {
+        width: 560px;
+        height: 200px;
+      }
+      @media screen and (max-width: 700px) {
+        padding: 20px 0 20px 0;
+        width: 438px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 338px;
+      }
+      a {
+        color: $texte-couleur-lien-mail-footer;
+        transition: all 0.4s;
+      }
+      a:hover{
+        color: $texte-couleur-lien-survol-mail-footer;
+        letter-spacing: 3px;
+        text-shadow: $ombre-lien-survol-mail-footer;
+      }
+  }
+  }
+}

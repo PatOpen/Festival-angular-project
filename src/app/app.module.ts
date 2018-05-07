@@ -21,6 +21,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import {InscriptionService} from './services/inscription.service';
+import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     SigninComponent,
     AccueilComponent,
     InscriptionComponent,
-    ActusAccueilComponent
+    ActusAccueilComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

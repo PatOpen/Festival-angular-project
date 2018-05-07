@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+
+.section-inscription {
+  background: url("../../assets/images/parc-monceau_1600x667-nb.jpg") no-repeat center;
+  background-size: cover ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .titre-inscription {
+    background-color: $bg-couleur-titre-inscription;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: $ombre-titre-inscription;
+  }
+  .items-inscription {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .block-items-inscription {
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 400px;
+      background-color: $bg-couleur-block-items-inscription;
+      border: $bordure-block-items-inscription;
+      h3 {
+        margin-bottom: 20px;
+      }
+      span {
+        background-color: $bg-couleur-block-items-span-inscription;
+        color: $texte-couleur-block-items-span-inscription;
+        border: $bordure-block-items-span-inscription;
+        float: right;
+        margin-top: -40px;
+        padding: 20px;
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 500px){
+        width: 300px;
+      }
+    }
+  }
+}

@@ -1,17 +1,37 @@
-@import "../../sass/tools";
+@import "../../sass/variables";
 
-@include media-breakpoint-up(xs) {
-  .nav-link{
-    padding-right: 0.5em;
+nav {
+  background-color: $bg-nav-couleur;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  a {
+    padding: 14px 20px;
+    color: $texte-couleur-nav;
+    transition: all 0.4s;
+    text-align: center;
   }
-}
-@include media-breakpoint-up(sm) {
-  .nav-link{
-    padding-right: 0.5em;
+  a:hover{
+    color: $texte-couleur-hover-lien-nav;
+    background-color: $bg-couleur-hover-lien-nav;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 5px #ffffff, 0 0 25px #ffffff, 0 0 20px #ffffff;
   }
-}
-@include media-breakpoint-up(md) {
-  .nav-link{
-    padding-right: 0.5em;
+  @media screen and (max-width: 576px){
+    flex-direction: column;
+  }
+
+  .nav-lien {
+    display: flex;
+    @media screen and (max-width: 576px){
+      flex-direction: column;
+    }
+  }
+
+  .nav-admin {
+    display: flex;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 }

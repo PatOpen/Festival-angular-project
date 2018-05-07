@@ -1,0 +1,100 @@
+@import "../../sass/variables";
+
+.titre-films-liste {
+  background-color: $bg-couleur-titre-films-liste;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: $ombre-titre-films-liste;
+}
+
+.section-films-liste {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: center;
+  .img-films-liste {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      border: 1px solid black;
+    }
+    .block-description-film-liste {
+      background-color: $bg-couleur-description-films-liste;
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-content: center;
+      top: 0;
+      left: -150%;
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s;
+      div {
+        padding: 20px;
+        p {
+          margin-bottom: 20px;
+        }
+        span {
+          font-size: 1.1rem;
+        }
+        button {
+          width: 100%;
+          height: 40px;
+          font-size: 1.1rem;
+          color: $texte-couleur-boutton-voir-detail;
+          margin-top: 10px;
+          cursor: pointer;
+          background-color: $bg-couleur-boutton-voir-detail;
+          transition: all 0.5s;
+        }
+        button:hover {
+          background-color: $bg-couleur-survol-boutton-voir-detail;
+          box-shadow: $ombre-boutton-voir-detail;
+          letter-spacing: 3px;
+        }
+      }
+    }
+
+  }
+  .block-item-films-liste {
+    background-color: $bg-couleur-block-item-films-liste;
+    overflow: hidden;
+    margin: 10px;
+    width: 22%;
+    padding-bottom: 20px;
+    box-shadow: $ombre-block-item-films-liste;
+    .titre-film-liste {
+      margin: 20px;
+    }
+    @media screen and (max-width: 1220px) {
+      width: 30%;
+    }
+    @media screen and (max-width: 872px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 587px) {
+      width: 100%;
+    }
+  }
+  .block-item-films-liste:hover{
+    .block-description-film-liste {
+      top: 0;
+      left: 100%;
+      transform: translate(-100%,0%);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

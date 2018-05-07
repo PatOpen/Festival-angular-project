@@ -1,27 +1,32 @@
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="card">
-      <div class="card-header">
-        <h5 class="card-title text-center">{{ titre }}</h5>
-      </div>
-      <img class="card-img-top" src="../../assets/images/{{ src }}" alt="{{ titre }}">
-      <div class="card-body">
-        <p class="card-text"><ins>Réalisateur</ins>: {{ real }}</p>
-        <p class="card-text"><ins>Synopsis</ins>: {{ desc }}</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Le {{ date }} août,</small>
-        <small class="text-muted">projection à {{ heure }}</small>
-      </div>
-    </div>
+<section class="section-film-detail">
+
+  <div class="titre-film-detail centrer">
+    <h1>{{ titre }}</h1>
   </div>
 
-  <div class="col-sm-6 col-md-4">
-    <h3>Inscrivez-vous !</h3>
-    <p>Si vous pensez venir voir "{{ titre }}" le {{ date }} août à {{ heure }}, vous pouvez vous pré-inscrire, en nous indiquant combien de personnes vous serez.</p>
-    <button class="btn btn-success" (click)="onSupprimerInscription()" [disabled]="nonbreInscription <= 0">-</button>
-    {{ nonbreInscription }}
-    <button class="btn btn-success" (click)="onRajouterInscription()">+</button>
-    <button class="btn btn-success" (click)="onEnvoyer()">Envoyer</button>
+  <article class="article-film-detail">
+    <img src="../../assets/images/{{ src }}" alt="{{ titre }}">
+    <div class="description-film-detail">
+        <p><strong><ins>Réalisateur</ins></strong>: {{ real }}</p>
+        <p><strong><ins>Synopsis</ins></strong>: {{ desc }}</p>
+    </div>
+  </article>
+
+  <div class="date-projection-film-detail centrer">
+    <p><strong>Le {{ date }} août, projection à {{ heure }}</strong></p>
   </div>
-</div>
+
+  <article class="article-inscription-film-detail">
+    <h2>Inscrivez-vous !</h2>
+    <p>Si vous pensez venir voir "{{ titre }}" le {{ date }} août à {{ heure }}, vous pouvez vous pré-inscrire, en indiquant le nombre de personnes qui vous accompagne.</p>
+    <div>
+      <button class="button-ajouter-film-detail" (click)="onSupprimerInscription()" [disabled]="nonbreInscription <= 0"><strong>-</strong></button>
+      <span><strong>{{ nonbreInscription }}</strong></span>
+      <button class="button-ajouter-film-detail" (click)="onRajouterInscription()"><strong>+</strong></button>
+      <button class="button-inscrire-film-detail" (click)="onEnvoyer()">S'inscrire</button>
+    </div>
+  </article>
+
+</section>
+
+<app-footer></app-footer>

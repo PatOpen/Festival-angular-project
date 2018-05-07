@@ -1,0 +1,76 @@
+@import "../../sass/variables";
+
+.section-actus {
+  background: url("../../assets/images/parc-monceau_1600x667-nb.jpg") no-repeat center;
+  background-size: cover ;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .titre-actus {
+    background-color: $bg-couleur-titre-actus;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: $ombre-titre-actus;
+  }
+  .liste-actus {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    .items-actus {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 400px;
+      background-color: $bg-couleur-item-actus;
+      border: $bordure-item-actus;
+      h2 {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 480px ){
+        width: 300px;
+      }
+    }
+    button {
+      background-color: $bg-couleur-button-supprimer-actus;
+      color: $texte-couleur-button-actus;
+      border: $bordure-button-supprimer-actus;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      padding: 5px 20px 5px 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      background-color: $bg-couleur-button-survol-supprimer-actus;
+      border: $bordure-button-survol-supprimer-actus;
+      box-shadow: $ombre-button-survol-supprimer-actus;
+      letter-spacing: 3px;
+    }
+  }
+  .button-nouvelle-actus {
+    align-self: center;
+    background-color: $bg-couleur-button-nouvelle-actus;
+    font-size: 1.1rem;
+    color: $texte-couleur-button-actus;
+    border: $bordure-button-nouvelle-actus;
+    width: 444px;
+    margin-top: 20px;
+    padding: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    @media screen and (max-width: 480px ){
+      width: 344px;
+    }
+  }
+  .button-nouvelle-actus:hover {
+    background-color: $bg-couleur-button-survol-nouvelle-actus;
+    border: $bordure-button-survol-nouvelle-actus;
+    box-shadow: $ombre-button-survol-nouvelle-actus;
+    letter-spacing: 3px;
+  }
+
+}
