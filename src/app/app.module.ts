@@ -24,7 +24,7 @@ import {InscriptionService} from './services/inscription.service';
 import { FooterComponent } from './footer/footer.component';
 
 
-const appRoutes: Routes = [
+ const appRoutes: Routes = [
     { path: 'auth/Enregistrement', canActivate: [AuthGuardService], component: SignupComponent },
     { path: 'auth/Connexion', component: SigninComponent },
     { path: 'auth/Admin-inscription', canActivate: [AuthGuardService], component: InscriptionComponent },

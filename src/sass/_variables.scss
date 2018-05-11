@@ -27,13 +27,15 @@ $bordure-article-accueil: 2px white solid;
 // Couleurs et effets de la section actus de la page accueil
 
 $texte-couleur-actus: black;
-$titre-h2-actus-couleur: white;
+$titre-h2-actus-couleur: #6c6c6c;
 
-$bg-couleur-actus-h2: linear-gradient(rgba(229, 229, 229, 0), #ededed);
+$bg-couleur-actus-h2: white;
+$bg-couleur-items-actus: white;
 
 $ombre-item-actus: 0 5px 10px rgba(0, 0, 0, 0.3);
+$ombre-actus-h2: 1px 2px 4px rgba(120, 120, 120, 0.61);
 
-$bordure-actus: rgba(161, 161, 161, 0.91) 1px solid;
+$bordure-items-actus: rgba(161, 161, 161, 0.91) 1px solid;
 
 // Couleur et effets du component films-list
 

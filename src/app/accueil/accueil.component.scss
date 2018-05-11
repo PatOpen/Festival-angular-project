@@ -3,9 +3,8 @@
 .section-accueil{
   background: url("../../assets/images/parc-monceau_1600x667-nb.jpg") no-repeat center;
   background-size: cover ;
-  margin-top: -50px;
   color: $texte-couleur-accueil;
-  height: 65vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

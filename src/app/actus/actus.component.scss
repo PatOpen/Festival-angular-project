@@ -6,6 +6,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 906px){
+    height: auto;
+  }
   .titre-actus {
     background-color: $bg-couleur-titre-actus;
     padding-top: 20px;
@@ -58,7 +61,7 @@
     color: $texte-couleur-button-actus;
     border: $bordure-button-nouvelle-actus;
     width: 444px;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     padding: 50px;
     cursor: pointer;
     transition: all 0.3s;
