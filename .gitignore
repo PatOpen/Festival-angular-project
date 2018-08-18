@@ -2,6 +2,7 @@
 
 # app
 /src/app/app.component.ts
+/dist
 /package-lock.json
 
 # compiled output

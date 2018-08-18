@@ -13,14 +13,14 @@ import { ActusComponent } from './actus/actus.component';
 import { ActusFormComponent } from './actus/actus-form/actus-form.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
-import {AuthService} from './services/auth.service';
-import {AuthGuardService} from './services/auth-guard.service';
-import {ActusService} from './services/actus.service';
-import {ListeFilmsService} from './services/liste-films.service';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import {RouterModule, Routes} from '@angular/router';
-import {InscriptionService} from './services/inscription.service';
+import { AuthService } from './services/auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
+import { ActusService } from './services/actus.service';
+import { ListeFilmsService } from './services/liste-films.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes, Router } from '@angular/router';
+import { InscriptionService } from './services/inscription.service';
 import { FooterComponent } from './footer/footer.component';
 
 

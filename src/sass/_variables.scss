@@ -46,10 +46,13 @@ $bg-couleur-boutton-voir-detail: green;
 $bg-couleur-survol-boutton-voir-detail: #009500;
 
 $texte-couleur-boutton-voir-detail: white;
+$texte-couleur-titre-film-liste: #000000;
 
 $ombre-boutton-voir-detail: 0 3px 10px rgba(0, 0, 0, 0.3);
 $ombre-block-item-films-liste: 1px 2px 4px rgba(0, 0, 0, 0.3);
 $ombre-titre-films-liste: 1px 2px 4px rgba(120, 120, 120, 0.61);
+
+$bordure-img-film-liste: 1px solid #000000;
 
 // Couleur et effets du component films-detail
 
@@ -135,6 +138,7 @@ $bg-couleur-titre-inscription: white;
 $bg-couleur-block-items-inscription: rgba(214, 214, 214, 0.9);
 $bg-couleur-block-items-span-inscription: white;
 
+$texte-couleur-block-items-inscription: black;
 $texte-couleur-block-items-span-inscription: green;
 
 $ombre-titre-inscription: 1px 2px 4px rgba(0, 0, 0, 0.3);

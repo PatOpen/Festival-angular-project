@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     img {
-      border: 1px solid black;
+      border: $bordure-img-film-liste;
     }
     .block-description-film-liste {
       background-color: $bg-couleur-description-films-liste;
@@ -66,6 +66,7 @@
     padding-bottom: 20px;
     box-shadow: $ombre-block-item-films-liste;
     .titre-film-liste {
+      color:$texte-couleur-titre-film-liste;
       margin: 20px;
     }
     @media screen and (max-width: 1220px) {
