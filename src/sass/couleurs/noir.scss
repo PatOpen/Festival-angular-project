@@ -1,0 +1,161 @@
+// Couleurs, bordures et effets
+
+// Couleurs générales
+
+$bg-color: #f7f7f7;
+$texte-couleur: black;
+$bordure-input: 1px solid #6c6c6c;
+
+// Couleurs Header
+
+$bg-nav-couleur: rgba(0, 0, 0, 0.8);
+$bg-couleur-hover-lien-nav: #ddd;
+
+$texte-couleur-nav: white;
+$texte-couleur-hover-lien-nav: #575757;
+
+// Couleurs accueil
+
+$texte-couleur-accueil:white;
+
+$bg-couleur-titre-h1-accueil: rgba(0, 0, 0, 0.8);
+$bg-article-couleur: rgba(0, 0, 0, 0.8);
+
+$bordure-titre-h1-accueil: 2px white solid;
+$bordure-article-accueil: 2px white solid;
+
+// Couleurs et effets de la section actus de la page accueil
+
+$texte-couleur-actus: black;
+$titre-h2-actus-couleur: green;
+
+$bg-couleur-actus-h2: white;
+$bg-couleur-items-actus: white;
+
+$ombre-item-actus: 0 5px 10px rgba(0, 0, 0, 0.3);
+$ombre-actus-h2: 1px 2px 4px rgba(120, 120, 120, 0.61);
+
+$bordure-items-actus: rgba(161, 161, 161, 0.91) 1px solid;
+
+// Couleur et effets du component films-list
+
+$bg-couleur-titre-films-liste: white;
+$bg-couleur-block-item-films-liste: #000000;
+$bg-couleur-description-films-liste: white;
+$bg-couleur-boutton-voir-detail: green;
+$bg-couleur-survol-boutton-voir-detail: #009500;
+
+$texte-couleur-boutton-voir-detail: white;
+$texte-couleur-titre-film-liste: white;
+
+$ombre-boutton-voir-detail: 0 3px 10px rgba(0, 0, 0, 0.3);
+$ombre-block-item-films-liste: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-titre-films-liste: 1px 2px 4px rgba(120, 120, 120, 0.61);
+
+$bordure-img-film-liste: 2px solid #ffffff;
+
+// Couleur et effets du component films-detail
+
+$bg-couleur-titre-films-detail: white;
+$bg-couleur-article-film-detail: white;
+$bg-couleur-date-projection-film-detail: white;
+$bg-couleur-article-inscription-film-detail: white;
+$bg-couleur-button-ajouter-film-detail: #009500;
+$bg-couleur-button-inscrire-film-detail: #009500;
+
+$texte-couleur-button-ajouter-film-detail: white;
+$texte-couleur-button-inscrire-film-detail: white;
+
+$bg-couleur-survol-button-film-detail: green;
+
+$ombre-titre-films-detail: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-article-film-detail: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-date-projection-film-detail: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-article-inscription-film-detail: 1px 2px 4px rgba(0, 0, 0, 0.3);
+
+$ombre-survol-button-film-detail: 2px 2px 10px rgba(120, 120, 120, 0.61);
+
+$bordure-img-article-film-detail: 1px solid black;
+$bordure-button-ajouter-film-detail: 1px solid rgb(191, 191, 191);
+$bordure-button-inscrire-film-detail: 1px solid rgb(191, 191, 191);
+
+// Couleur et effets du component d'authentification et du component créer un compte
+
+$bg-couleur-titre-connexion: white;
+$bg-couleur-form-connexion: rgba(175, 175, 175, 0.8);
+$bg-couleur-button-connexion: green;
+$bg-couleur-button-survol-connexion: #009500;
+
+$texte-couleur-button-connexion: white;
+
+$ombre-titre-connexion: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-button-survol-connexion: 1px 2px 4px grey;
+
+$bordure-form-connexion: 2px solid white;
+$bordure-button-connexion: 1px solid darkgreen;
+$bordure-button-survol-connexion: 1px solid green;
+
+// Couleur et effets du component actus pour l'administration
+
+$bg-couleur-titre-actus: white;
+$bg-couleur-item-actus: rgba(214, 214, 214, 0.9);
+$bg-couleur-button-supprimer-actus: #ff5e0b;
+$bg-couleur-button-nouvelle-actus: green;
+$bg-couleur-button-survol-supprimer-actus: red;
+$bg-couleur-button-survol-nouvelle-actus: #009500;
+
+$texte-couleur-button-actus: white;
+
+$ombre-titre-actus: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-button-survol-supprimer-actus: 1px 2px 4px #ededed;
+$ombre-button-survol-nouvelle-actus: 1px 2px 4px grey;
+
+$bordure-item-actus: 3px solid white;
+$bordure-button-nouvelle-actus: 3px solid white;
+$bordure-button-supprimer-actus: 1px solid #cc570b;
+$bordure-button-survol-supprimer-actus: 1px solid #640e10;
+$bordure-button-survol-nouvelle-actus: 2px solid green;
+
+// Couleur et effets du component actus-form pour enregistrer les actus
+
+$bg-couleur-titre-actus-form: white;
+$bg-couleur-form-actus-form: rgba(175, 175, 175, 0.8);
+$bg-couleur-button-actus-form: green;
+$bg-couleur-button-survol-actus-form: #009500;
+
+$texte-couleur-button-actus-form: white;
+
+$ombre-titre-actus-form: 1px 2px 4px rgba(0, 0, 0, 0.3);
+$ombre-button-survol-actus-form: 1px 2px 4px grey;
+
+$bordure-form-actus-form: 2px solid white;
+$bordure-button-actus-form: 1px solid darkgreen;
+$bordure-button-survol-actus-form: 1px solid green;
+
+// Couleur et effets du component inscription
+
+$bg-couleur-titre-inscription: white;
+$bg-couleur-block-items-inscription: rgba(0, 0, 0, 0.9);
+$bg-couleur-block-items-span-inscription: white;
+
+$texte-couleur-block-items-inscription: white;
+$texte-couleur-block-items-span-inscription: green;
+
+$ombre-titre-inscription: 1px 2px 4px rgba(0, 0, 0, 0.3);
+
+$bordure-block-items-inscription: 3px solid white;
+$bordure-block-items-span-inscription: 3px solid grey;
+
+// Couleur et effets du component footer
+
+$bg-couleur-footer: rgba(0, 0, 0, 0.9);
+$bg-couleur-contact-footer: rgba(160, 160, 160, 0.8);
+
+$texte-couleur-footer: white;
+$texte-couleur-lien-mail-footer: rgba(201, 201, 201, 0.9);
+$texte-couleur-lien-survol-mail-footer: white;
+
+$bordure-map-footer: 3px solid #b8b8b8;
+$bordure-contact-footer: 2px white solid;
+
+$ombre-lien-survol-mail-footer: 1px 1px 5px #ffffff, 0 0 25px #ffffff, 0 0 20px #ffffff;
